@@ -1,7 +1,4 @@
-<div align="center">
-  <p>
-    <img width="100%" src="assets/banner.png" alt="Object Tracking System Banner">
-  </p>
+
 
 <h1>Object Detection and Tracking System</h1>
 
