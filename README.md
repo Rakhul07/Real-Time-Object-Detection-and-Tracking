@@ -41,14 +41,13 @@ The system is built using modern full-stack technologies and integrates MetaMask
 ```bash
 npm install
 2. Create .env file
+env
+Copy code
 EMAIL=your_email_id
 PASSWORD=your_email_password
-
-
 Used for sending credentials and notifications to voters and candidates.
 
 🧩 Prerequisites
-
 Node.js v11.14.0
 
 MongoDB running on localhost:27017
@@ -59,15 +58,15 @@ Rinkeby test Ether
 Faucet: https://faucet.rinkeby.io
 
 ▶️ Run Application
+bash
+Copy code
 npm start
-
-
 Application runs at:
 
+arduino
+Copy code
 http://localhost:3000
-
 🔄 Application Workflow
-
 Company registers and logs in
 
 Company creates an election
@@ -85,30 +84,41 @@ Winner declared and notified
 📸 Screenshots
 Homepage
 
+
 Company Login
+
 
 Create Election
 
+
 Dashboard
+
 
 Candidate List
 
+
 Candidate Registration Mail
+
 
 Voter List
 
+
 Voter Registration Mail
+
 
 Voter Login
 
+
 Successful Voting
+
 
 Unsuccessful Voting
 
+
 Winner Notification
 
-🔐 Security Features
 
+🔐 Security Features
 Smart contract prevents double voting
 
 Blockchain ensures immutability
@@ -118,11 +128,9 @@ Encrypted credentials via email
 MetaMask authentication
 
 📜 License
-
 This project is intended for educational and research purposes only.
 
 🤝 Contribution
-
 Contributions are welcome.
 
 Fork the repository
@@ -134,6 +142,4 @@ Commit changes
 Open a Pull Request
 
 📬 Contact
-
 For bug reports and improvements, open an issue in this repository.
-
