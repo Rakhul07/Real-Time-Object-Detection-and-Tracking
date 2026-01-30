@@ -1,11 +1,11 @@
 <div align="center">
   <p>
-    <img width="100%" src="screenshots/homepage.PNG" alt="Blockchain Voting System Banner">
+    <img width="100%" src="assets/banner.png" alt="Object Tracking System Banner">
   </p>
 
-<h1>Blockchain Voting System</h1>
+<h1>Object Detection and Tracking System</h1>
 
-A secure, transparent, and decentralized E-Voting system powered by Ethereum blockchain.
+A real-time object detection and multi-object tracking system using deep learning and computer vision.
 
 </div>
 
@@ -13,133 +13,118 @@ A secure, transparent, and decentralized E-Voting system powered by Ethereum blo
 
 ## 🌍 Overview
 
-This project implements a **Blockchain-based Electronic Voting System** that ensures:
+This project implements a **real-time Object Detection and Tracking System** capable of:
 
-- Vote immutability using smart contracts  
-- Transparency through public ledger verification  
-- Secure authentication for voters and candidates  
-- Decentralized trust (no central authority can tamper with votes)
+- Detecting objects in images and video streams  
+- Assigning unique IDs to objects  
+- Tracking their movement across frames  
+- Maintaining object identity over time  
 
-The system is built using modern full-stack technologies and integrates MetaMask for blockchain interaction.
+It is designed for applications such as:
+- Surveillance systems  
+- Traffic monitoring  
+- Autonomous vehicles  
+- Crowd analysis  
+- Sports analytics  
 
 ---
 
 ## ⚙️ Tech Stack
 
-- **Blockchain:** Solidity, Web3.js  
-- **Frontend:** Next.js, Semantic UI React  
-- **Backend:** Node.js, Express.js  
-- **Database:** MongoDB  
-- **File Storage:** IPFS  
-- **Wallet:** MetaMask  
+- **Deep Learning:** YOLO (Ultralytics)  
+- **Tracking Algorithms:** SORT / DeepSORT / ByteTrack  
+- **Backend:** Python  
+- **Frameworks:** PyTorch, OpenCV  
+- **Visualization:** Matplotlib, OpenCV GUI  
 
 ---
 
 ## 🚀 Installation & Setup
 
-### 1. Install dependencies
+### 1. Clone repository
 ```bash
-npm install
-2. Create .env file
-env
-Copy code
-EMAIL=your_email_id
-PASSWORD=your_email_password
-Used for sending credentials and notifications to voters and candidates.
-
-🧩 Prerequisites
-Node.js v11.14.0
-
-MongoDB running on localhost:27017
-
-MetaMask browser extension
-
-Rinkeby test Ether
-Faucet: https://faucet.rinkeby.io
-
-▶️ Run Application
+git clone https://github.com/yourusername/object-tracking-system.git
+cd object-tracking-system
+2. Create virtual environment
 bash
 Copy code
-npm start
-Application runs at:
-
-arduino
+python -m venv venv
+source venv/bin/activate   # Linux/Mac
+venv\Scripts\activate      # Windows
+3. Install dependencies
+bash
 Copy code
-http://localhost:3000
-🔄 Application Workflow
-Company registers and logs in
+pip install -r requirements.txt
+▶️ Run Application
+Image detection
+bash
+Copy code
+python detect.py --source image.jpg
+Video tracking
+bash
+Copy code
+python track.py --source video.mp4
+Webcam tracking
+bash
+Copy code
+python track.py --source 0
+🔄 Workflow
+Input video/image/webcam stream
 
-Company creates an election
+YOLO detects objects frame-by-frame
 
-Company adds candidates and voters
+Tracking algorithm assigns IDs
 
-Credentials sent via email
+Objects are tracked across frames
 
-Voters log in using MetaMask
+Output video with bounding boxes and IDs
 
-Vote stored on blockchain
+🧠 Algorithms Used
+YOLO (You Only Look Once) – for object detection
 
-Winner declared and notified
+SORT (Simple Online Realtime Tracking) – Kalman filter + Hungarian algorithm
 
-📸 Screenshots
-Homepage
+DeepSORT – appearance-based re-identification
 
+ByteTrack – robust multi-object tracking
 
-Company Login
+📸 Sample Results
+Detection Output
 
+Tracking Output
 
-Create Election
+🔐 Features
+Real-time FPS processing
 
+Multiple object tracking
 
-Dashboard
+Unique ID assignment
 
+Occlusion handling
 
-Candidate List
+Works with video, webcam, and images
 
+Export output video
 
-Candidate Registration Mail
+🧪 Performance
+FPS: ~25–40 (GPU)
 
+Accuracy: YOLO pretrained on COCO
 
-Voter List
+Tracking stability using ByteTrack/DeepSORT
 
-
-Voter Registration Mail
-
-
-Voter Login
-
-
-Successful Voting
-
-
-Unsuccessful Voting
-
-
-Winner Notification
-
-
-🔐 Security Features
-Smart contract prevents double voting
-
-Blockchain ensures immutability
-
-Encrypted credentials via email
-
-MetaMask authentication
-
+📂 Project Structure
+kotlin
+Copy code
+object-tracking-system/
+│
+├── data/
+├── models/
+├── track.py
+├── detect.py
+├── requirements.txt
+├── assets/
+└── README.md
 📜 License
-This project is intended for educational and research purposes only.
+This project is for educational and research purposes only.
 
-🤝 Contribution
-Contributions are welcome.
-
-Fork the repository
-
-Create a feature branch
-
-Commit changes
-
-Open a Pull Request
-
-📬 Contact
-For bug reports and improvements, open an issue in this repository.
