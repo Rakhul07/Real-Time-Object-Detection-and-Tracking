@@ -1,5 +1,3 @@
-
-
 <h1>Object Detection and Tracking System</h1>
 
 A real-time object detection and multi-object tracking system using deep learning and computer vision.
@@ -12,33 +10,35 @@ A real-time object detection and multi-object tracking system using deep learnin
 
 This project implements a **real-time Object Detection and Tracking System** capable of:
 
-- Detecting objects in images and video streams  
-- Assigning unique IDs to objects  
-- Tracking their movement across frames  
-- Maintaining object identity over time  
+- Detecting objects in images and video streams
+- Assigning unique IDs to objects
+- Tracking their movement across frames
+- Maintaining object identity over time
 
 It is designed for applications such as:
-- Surveillance systems  
-- Traffic monitoring  
-- Autonomous vehicles  
-- Crowd analysis  
-- Sports analytics  
+
+- Surveillance systems
+- Traffic monitoring
+- Autonomous vehicles
+- Crowd analysis
+- Sports analytics
 
 ---
 
 ## ⚙️ Tech Stack
 
-- **Deep Learning:** YOLO (Ultralytics)  
-- **Tracking Algorithms:** SORT / DeepSORT / ByteTrack  
-- **Backend:** Python  
-- **Frameworks:** PyTorch, OpenCV  
-- **Visualization:** Matplotlib, OpenCV GUI  
+- **Deep Learning:** YOLO (Ultralytics)
+- **Tracking Algorithms:** SORT / DeepSORT / ByteTrack
+- **Backend:** Python
+- **Frameworks:** PyTorch, OpenCV
+- **Visualization:** Matplotlib, OpenCV GUI
 
 ---
 
 ## 🚀 Installation & Setup
 
 ### 1. Clone repository
+
 ```bash
 git clone https://github.com/yourusername/object-tracking-system.git
 cd object-tracking-system
@@ -125,3 +125,4 @@ object-tracking-system/
 📜 License
 This project is for educational and research purposes only.
 
+```
