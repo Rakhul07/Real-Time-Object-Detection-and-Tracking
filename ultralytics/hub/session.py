@@ -170,7 +170,7 @@ class HUBTrainingSession:
         # Model could not be created
         # TODO: improve error handling
         if not self.model.id:
-            return None
+            return
 
         self.model_url = f"{HUB_WEB_ROOT}/models/{self.model.id}"
 

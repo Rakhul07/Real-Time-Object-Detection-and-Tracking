@@ -249,7 +249,6 @@ class YOLOEPEFreeTrainer(YOLOEPETrainer, YOLOETrainerFromScratch):
             at the path specified by 'cache_path'. If the cache file already exists, it will be loaded
             instead of regenerating the embeddings.
         """
-        pass
 
 
 class YOLOEVPTrainer(YOLOETrainerFromScratch):
